@@ -1,0 +1,121 @@
+.container {
+  border: 5px outset #6c012b;
+  border-radius: 38px;
+  text-align: center;
+  margin-top: 5%;
+  margin: 0 auto;
+  width: 700px;
+  height: 500px;
+  background-color: #ff974e;
+  color: #2d112a;
+}
+#info {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+body {
+  background-color: #ffdcc8;
+}
+button {
+  font-size: 150%;
+}
+button.change {
+  border: transparent;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+button.active {
+  border-bottom: 3px solid #6c012b;
+}
+button.change:hover {
+  border-bottom: 3px solid #ff974e;
+}
+button.change:active {
+  border: transparent;
+}
+button.change:focus {
+  outline: none;
+}
+button.confirm {
+  margin-top: 5%;
+  border: transparent;
+  background-color: #ff974e;
+  color: #6c012b;
+  transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+  left: 50%;
+}
+button.confirm:hover {
+  background-color: #6c012b;
+  color: #ff974e;
+}
+button.change:focus {
+  outline: none;
+}
+.autentificare {
+  position: relative;
+  left: 10%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+input.autentificare {
+  font-size: 120%;
+  border: transparent;
+}
+.autentificare {
+  margin-top: 5%;
+}
+#formContent {
+  width: 200px;
+}
+.wrapper {
+  position: fixed;
+  background-color: #ffdcc8;
+  border: 7px ridge #6c012b;
+  border-radius: 33px;
+  display: table;
+  top: 30%;
+  left: 43%;
+  width: 300px;
+  color: #6c012b;
+}
+#dark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.hide {
+  display: none;
+}
+#logInIcon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: url(../Assets/LogInIcon.png);
+  background-size: contain;
+}
+#autentificareInfo {
+  margin-left: 10%;
+}
+
+.wishContainer {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.numeJoc {
+  padding-top: 10px;
+}
+.adauga {
+  border: transparent;
+}
+.adauga:focus {
+  outline: none;
+}

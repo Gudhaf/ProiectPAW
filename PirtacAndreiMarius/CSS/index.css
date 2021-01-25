@@ -1,0 +1,43 @@
+body {
+  background-image: url("../Assets/IndexBackground.gif");
+}
+h1 {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 400%;
+  animation: glitch 1s linear infinite;
+  color: #ff974e;
+}
+#description {
+  font-size: 200%;
+  color: #6c012b;
+  font-weight: bold;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+#links {
+  display: table;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+#links a {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}

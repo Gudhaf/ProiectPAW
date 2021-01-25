@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Poggers Noutati</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="../CSS/navBar.css">
+  <link rel="stylesheet" href="../CSS/noutati.css">  
+  <link rel="stylesheet" href="../CSS/autentificare.css">  
+
+  <script src="../JS/autentificare.js"></script>
+</head>
+
+<body onload="UpdateInfo()">
+    <div id="antent">
+        <p>Poggers - Pagina de noutati</p>
+    </div>
+
+
+    <div id="nav">
+        <ul class="navBar">
+            <li class="navBar"><a class="active" href="noutati.html">Noutati</a></li>
+            <li class="navBar"><a href="../index.html">Acasa</a></li>
+            <li class="navBar"><a href="twitch.html">Twitch</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <div id="info">
+            <div class="container">
+                <h1>Istoric</h1>
+                <P>Primele jocuri video au fost realizate între anii 1950 și 1960 de Jon Snell și rulau pe platforme cum ar fi osciloscopul, sau computere EDSAC. Cel mai vechi joc pe calculator, o simulare de rachete, a fost creat în 1947 de către Thomas T. Goldsmith Jr. și de Estle Ray Mann. O cerere pentru acordarea de drepturi de autor a fost făcută pe 25 ianuarie 1947 și patentată ca U.S. Patent #2,455,992 din data de 14 decembrie 1948. Mai târziu în 1952, o versiune a jocului X și 0 numită Noughts and Crosses a fost creată de A. S. Douglas ca parte a disertației de doctorat la Universitatea din Cambridge. Jocul rula pe un computer al universității numit Electronic Delay Storage Automatic Calculator (EDSAC). În 1958 William Higinbotham - care a ajutat să se construiască prima bombă atomică - a creat Tennis For Two în laboratoarele naționale din Brookhaven, situate în Upton, New York, pentru a distra vizitatorii laboratorului. În 1962 Steve Russel a creat jocul Spacewar!, un joc de simulare spațială. Programul rula pe un DEC PDP-1 și este considerat de mulți specialiști atât primul joc pentru calculator cât și printre cele mai importante realizate vreodată. Jocul s-a răspândit rapid la universități și laboratoare de cercetare din țară. În 1968 Ralph Baer, care va fi cunoscut mai târziu și ca Părintele Jocurilor Video, a patentat o versiune a unei console de jocuri numită Television Gaming and Training Apparatus. În 1967, Baer a creat un joc gen ping-pong pentru consolă care semăna cu Tennis for Two (și cu viitorul joc arcade Pong). A lucrat cu Magnavox și a creat în 1972 prima consolă, numită Magnavox Odyssey.            
+                </P>
+            </div>
+            <div class="container">
+                <h1>Studiouri de jocuri in Romania</h1>
+                <P>
+                    Ubisoft
+                    <br>
+                    Ubisoft Entertainment S.A. este o companie franceză care produce jocuri pentru PC și jocuri video. Firma a fost fondată în 1986, în Franța de cei cinci frați din familia Guillemont. Pe lângă studioul din Franța compania mai deține studiouri în Montreal (Canada), Barcelona (Spania), Shanghai (China), Carolina de Nord (SUA), Dusseldorf (Germania), București și Craiova (România), Milano (Italia) și în Sofia (Bulgaria). Mascota companiei este personajul Rayman.
+                    Ubisoft este un dezvoltator din Franța de jocuri video pentru PC și console.
+                    <br>
+                    <br>
+                    Electronic Arts (EA)
+                    <br>
+                    Electronic Arts este o companie americană care produce și comercializează jocuri video pentru computere și console de jocuri. Cele mai cunoscute jocuri din portofoliul Electronic Arts sunt simulatoarele sportive precum FIFA Soccer, alături de Need for Speed, Medal of Honor, The Sims, Battlefield și jocurile apărute mai târziu ca Burnout și seria Command&Conquer. Înființată în 1982 de Trip Hawkins, compania a fost o pionieră în industria primelor jocuri pentru computer și a fost notabilă promovarea designerilor și programatorilor săi. La început, EA a fost o companie producătoare de jocuri la domiciliu. La sfârșitul anilor '80 compania a început să scoată jocuri la domiciliu și pentru console la începutul anilor '90. EA a angajat mai târziu programatori de succes. La începutul anului 2000, devenea una dintre cei mai mari distribuitori de jocuri. În 2007 EA se plasa pe locul 8 în clasamentul celor mai mari producători software din lume. În luna mai a anului 2008, compania a raportat venitul anual de 4,02 miliarde de dolari în anul fiscal 2008. În anul 2010 se plasa pe locul 2 în clasamentul producătorilor de jocuri video, depășită de compania japoneză Nintendo.
+                </P>
+            </div>
+            <ul id="lista">
+            </ul>
+        </div>
+
+        <div id="dark" class="hide" onclick="HideUI()"></div>
+        <div id="logInIcon" onclick="ShowUI()"></div>
+
+        <div id="autentificareUI" class="wrapper hide">
+            <div id="signOut">
+                <button id="signOut" class="confirm" onclick="SignOut()">Sign Out</button>
+            </div>
+            <div id="formContent">
+                <button class="active change" id="logIn" onclick="ChangeToLogIn()"> Log In </button>
+                <button class="change" id="signUp" onclick="ChangeToSignUp()">Sign Up </button>
+              
+                <form>
+                    <input type="text" class="autentificare" id="nume" name="nume" placeholder="nume">
+                    <input type="text" class="autentificare" id="parola" name="login" placeholder="parola">
+                    <button id="clickityclick" class="confirm" onclick="logIn()">Log In</button>
+                </form>
+            </div>
+            <p id="autentificareInfo"></p>
+        </div>
+        
+        <div id="whishList" class="wishContainer">
+            <p>Pentru a folosi tabelul de wishlist trebuie sa fii autentificat </p>
+            <div id="tabelWishList">
+                <form>
+                    <input type="text" class="numeJoc" id="jocNou" name="numeJoc" placeholder="numele jocului">
+                    <button id="adaugaJoc" class="adauga" onclick="">Adauga</button>   
+                </form>
+                <h1>WISH LIST</h1>
+                <table>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Copyright FSA gr.1342 2020-2021 Poggers</p>
+    </div>
+</body>
+</html>

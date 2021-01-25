@@ -1,0 +1,146 @@
+ul.navBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li.navBar {
+  float: left;
+}
+
+li.navBar a {
+  display: block;
+  color: #6c012b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-bottom: 6px solid #6441a4;
+  font-weight: bold;
+  font-size: larger;
+  background-color: #0e9dd9;
+  transition: background-color 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+li.navBar a.active {
+  border-bottom: 6px solid #0e9dd9;
+}
+
+li.navBar a:hover {
+  background-color: #6441a4;
+}
+
+#nav {
+  display: table;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2f175c;
+  color: #dc4937;
+  text-align: center;
+  color: #0e9dd9;
+}
+
+#antent {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #6441a4;
+  color: #ffdcc8;
+  font-weight: bold;
+  color: #0e9dd9;
+}
+
+#info {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+body {
+  background-color: #060d1e;
+}
+#main {
+  background-color: #060d1e;
+}
+.container {
+  border: 5px outset #0e9dd9;
+  border-radius: 38px;
+  text-align: center;
+  margin-top: 5%;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  background-color: #6441a4;
+  box-shadow: -10px 0px 13px -7px #0e9dd9, 10px 0px 13px -7px #0e9dd9,
+    5px 5px 15px 5px rgba(14, 157, 217, 0);
+  color: #0e9dd9;
+}
+img {
+  width: 200px;
+  height: 200px;
+}
+.tabelInfo {
+  margin-top: 5%;
+  color: #ffffff;
+  text-shadow: 0 0 5px #6441a4, 0 0 10px #6441a4, 0 0 15px #6441a4,
+    0 0 20px #0e9dd9, 0 0 30px #0e9dd9, 0 0 40px #0e9dd9, 0 0 55px #0e9dd9,
+    0 0 75px #0e9dd9;
+  font-size: 300%;
+  text-align: center;
+}
+
+#tabel {
+  display: table;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+table {
+  margin-bottom: 10%;
+  width: 50%;
+  color: #0e9dd9;
+  font-size: 200%;
+}
+table,
+th,
+td {
+  border: 5px outset #0e9dd9;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 15px;
+  text-align: center;
+}
+tr:nth-child(even) {
+  background: linear-gradient(266deg, #060d1e, #6441a4);
+  background-size: 400% 400%;
+  animation: AnimateGradient 14s ease infinite;
+}
+tr:nth-child(odd) {
+  background: linear-gradient(266deg, #6441a4, #060d1e);
+  background-size: 400% 400%;
+
+  animation: AnimateGradient 14s ease infinite;
+}
+th {
+  background-color: #0e9dd9;
+  color: #060d1e;
+}
+
+@keyframes AnimateGradient {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
